@@ -8,4 +8,7 @@ The drug table is my reference table and it stores one row per unique NDC, with 
 The utilization table stores the actual quarterly state records and includes utilization_id (primary key), ndc (foreign key referencing drug.ndc), utilization_type, state, year,
  quarter, suppression_used, units_reimbursed, number_of_prescriptions, total_amount_reimbursed, medicaid_amount_reimbursed, and non_medicaid_amount_reimbursed. 
 
-The relationship is one-to-many, meaning one drug entry in drug can appear in many utilization rows across states and quarters. I also created indexes on utilization.ndc and (state, year, quarter) so joins and time or location queries run faster. After building the schema, I inserted unique NDC rows into drug first, then inserted the full utilization records into utilization to keep referential integrity clean.
+
+The relationship is one-to-many, meaning one drug entry in drug can appear in many utilization rows across states and quarters. 
+I also created indexes on utilization.ndc and (state, year, quarter) so joins and time or location queries run faster. 
+After building the schema, I inserted unique NDC rows into drug first, then inserted the full utilization records into utilization to keep referential integrity clean.

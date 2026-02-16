@@ -1,5 +1,14 @@
-At this stage, I feel confident that the dataset supports my core research question about cross state reimbursement variation, but it also made me realize how careful I need to be with interpretation. The distribution of price per prescription is heavily right-skewed, so simple averages can be misleading if low volume prescriptions are not handled properly. One immediate next step is to compute weighted average prices at the state level so that high-volume drugs have appropriate influence. I also plan to move from pooled analysis to drug-level comparisons, meaning I will compare how the same NDC is reimbursed across different states rather than mixing all drugs together.
+At this stage, I feel confident that the dataset supports my core research question about cross state reimbursement variation, but it also made me realize how careful I need to be with interpretation. 
+The distribution of price per prescription is heavily right-skewed, so simple averages can be misleading if low volume prescriptions are not handled properly.
+One immediate next step is to compute weighted average prices at the state level so that high-volume drugs have appropriate influence. 
+I also plan to move from pooled analysis to drug-level comparisons, meaning I will compare how the same NDC is reimbursed across different states rather than mixing all drugs together.
 
-Another important next step is expanding the time horizon. Right now, I am using only the 2025 file, which limits the analysis to short-term variation. However, previous years of State Drug Utilization Data are publicly available, and I plan to integrate multiple years into the same database. By combining prior years, I can create a longer panel dataset that allows me to examine whether state-level price differences persist over time or fluctuate year to year. This would also allow me to analyze trends in manufacturer reimbursement patterns and test whether certain states consistently appear as higher-paying markets across multiple years.
+Another important next step is expanding the time horizon. Right now, I am using only the 2025 file, which limits the analysis to short-term variation. 
+However, previous years of State Drug Utilization Data are publicly available, and I plan to integrate multiple years into the same database. 
+By combining prior years, I can create a longer panel dataset that allows me to examine whether state-level price differences persist over time or fluctuate year to year.
+This would also allow me to analyze trends in manufacturer reimbursement patterns and test whether certain states consistently appear as higher-paying markets across multiple years.
 
-With a multi-year dataset, I can begin exploring structural questions such as whether reimbursement dispersion is increasing over time, whether manufacturer concentration changes year to year, and whether certain drugs experience systematic pricing shifts across markets. Expanding the dataset will significantly strengthen the economic depth of the project and make it more robust for future modeling and inference.
+
+With a multi-year dataset, I can begin exploring structural questions such as whether reimbursement dispersion is increasing over time, whether manufacturer concentration changes year to year,
+and whether certain drugs experience systematic pricing shifts across markets. 
+Expanding the dataset will significantly strengthen the economic depth of the project and make it more robust for future modeling and inference.

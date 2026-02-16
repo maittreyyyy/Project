@@ -1,0 +1,17 @@
+I started exploration by checking dataset size, years covered, number of states, and number of unique NDCs so I could understand the scope before doing any analysis. 
+
+I computed descriptive statistics for the numeric variables like prescriptions, units reimbursed, and reimbursement totals to see typical ranges and how extreme the spread is. 
+
+I created a derived metric called price per prescription using total amount reimbursed divided by number of prescriptions, because that is the core variable tied to my pricing variation question. The distribution of price per prescription is extremely right-skewed, meaning most observations are relatively low cost but a small set of records are very high cost and stretch the scale. Because of that skew, I used a log-scale histogram and also planned to use percentile caps for visualization so the central distribution is readable. 
+
+I also plotted the national average price per prescription over time, which currently only shows a change between 2025 Q1 and 2025 Q2 since my current file is 2025 data, so it is not a long-run trend yet but it is still a useful baseline. 
+
+I plotted the top 10 states by average price per prescription and observed that some states appear consistently higher than others in the simple average view, which motivates a deeper “same drug across states” analysis. 
+
+I explored the drug table itself by counting unique manufacturers and finding the manufacturers with the largest number of NDC entries, which helps me understand supply-side concentration at the product registration level. 
+
+I also looked at product names with the highest NDC counts and saw that common generic-style products have many NDC variants, which likely reflects multiple manufacturers, strengths, and packaging formats. 
+
+Missing values are mainly explained by suppression and low-volume reporting behavior, so I treated suppressed or zero-prescription rows cautiously and flagged them for later filtering decisions. 
+
+A behavior that needs future attention is that unweighted state averages can be distorted by very low-volume rows, so I will switch to weighted averages when comparing state price levels more seriously.

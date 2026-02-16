@@ -1,0 +1,17 @@
+I obtained the dataset from data.gov under the title “State Drug Utilization Data 2025.” 
+The dataset is published by the Centers for Medicare & Medicaid Services (CMS) under the U.S. Department of Health & Human Services. 
+The metadata indicates that it was updated on December 12, 2025 and is publicly available under a public domain license.
+
+The dataset contains state-level records of covered outpatient drug utilization paid for by state Medicaid agencies. 
+It includes National Drug Code identifiers, drug name, number of prescriptions, units reimbursed, total amount reimbursed, Medicaid amount reimbursed, 
+and non-Medicaid amount reimbursed.
+
+I selected this dataset because it provides administrative reimbursement data at the state and quarterly level, 
+which directly supports my research question on interstate price variation for identical drugs. 
+
+The inclusion of NDC allows me to compare the same drug across states and across time.
+The dataset is publicly accessible and reproducible via data.gov. I documented the dataset URL and access date in the README file. 
+The CSV file was stored in the data/raw/ directory without modification..
+
+The dataset includes both year and quarter variables, enabling longitudinal panel analysis. 
+I verified that the dataset contains sufficient cross-state and temporal variation to support my problem formulation.

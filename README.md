@@ -82,7 +82,7 @@ The relationship between tables is **one-to-many**, where each drug can appear i
 ---
 
 ## **Repository Structure**
-
+```
 Project/
 │
 ├── data/
@@ -110,7 +110,7 @@ Project/
 └── README.md
 
 
-
+```
 
 ## **How to Reproduce the Project**
 
@@ -140,7 +140,7 @@ pip install -r requirements.txt
 
 ```
 
-### **4. Fpr creating database**
+### **4. For creating database**
 Open and run:
 database.ipynb
 
@@ -151,6 +151,25 @@ Open and run:
 main.ipynb
 
 
+
+## **Technical Stack**
+
+Python 3.11
+
+pandas
+
+numpy
+
+matplotlib
+
+seaborn
+
+SQLite3
+
+## **Author**
+
+Maitrey Phatak
+Master’s Student – Applied Data Science
 
 
 

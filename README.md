@@ -33,11 +33,16 @@ To answer this, the project calculates **price per prescription** and evaluates 
 - **Accessed via:** Data.gov  
 - **License:** Public Domain  
 
+Source: https://healthdata.gov/CMS/State-Drug-Utilization-Data-2024/atef-9yh4/about_data
+
 The dataset contains **state-level quarterly Medicaid reimbursement records**, including prescription counts and reimbursement totals.
 
 ---
 
 ## **Database Design**
+
+** Database Google Drive Link: ** https://drive.google.com/file/d/1D5Cmnq3bE4PUHxkN5pDmSrNs9Wnfalho/view?usp=drive_link
+(You can directly download the database here)
 
 The SQLite database is named **`medicaid_drugs.db`** and contains two relational tables.
 

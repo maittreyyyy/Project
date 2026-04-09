@@ -14,6 +14,14 @@ Milestone 1 focuses on the early stages of the data science workflow:
 - **Database schema design**
 - **Initial data exploration**
 
+Milestone 2 extends the project beyond exploration into a full data science pipeline:
+
+- **Data Cleaning (Wrangling Part I)**
+- **Feature Engineering (Wrangling Part II)**
+- **Modeling (Foundations + Evaluation)**
+- **Visualization / Dashboard**
+
+The goal is to build a reproducible, end-to-end pipeline from raw administrative data to interpretable modeling results.
 The goal is to build a clean, reproducible pipeline from raw administrative data to structured economic analysis.
 
 ---
@@ -101,14 +109,22 @@ Project/
 │ ├── data_acquisition.txt
 │ ├── data_acquisition_database.txt
 │ ├── data_exploration.txt
+   ├── DataWrangling.txt
+│  ├── DataWrangling2.txt
+│  ├── DataModelling.txt
+│  ├── DataModelling2.txt
+│  ├── DataVisualisation.txt
 │ └── reflection_future_work.txt
 │
 ├── notebooks/
 │ ├── 01_problem_formulation.ipynb
 │ ├── 02_data_acquisition.ipynb
 │ ├── 03_database_schema.ipynb
-│ └── 04_data_exploration.ipynb
-│
+│ ├── 04_data_exploration.ipynb
+│ ├── 05_data_wrangling.ipynb 
+│ ├── 06_new_data_wrangling.ipynb
+│ ├── 07_app.py
+
 ├── schema.png
 ├── data_dictionary.pdf
 ├── requirements.txt
@@ -155,6 +171,20 @@ database.ipynb
 Open and run:
 main.ipynb
 
+### **6. Run Data Wrangling**
+Open and run:
+data_wrangling.ipynb
+
+### **7. Run Data Modeling**
+Open and run:
+data_modelling.ipynb
+
+
+### **8. Run Data Visualisation**
+Open and run:
+app.py
+
+
 
 
 ## **Technical Stack**
@@ -171,6 +201,9 @@ seaborn
 
 SQLite3
 
+LightGBM
+
+streamlit
 ## **Author**
 
 Maitrey Phatak

@@ -1,0 +1,39 @@
+
+
+I decided to focus on the State Drug Utilization Data because it provides structured, transaction-level Medicaid reimbursement data that allows me to study real pharmaceutical market behavior across states.
+My core research question is whether states systematically pay different reimbursement prices for the same drug and whether those differences persist over time.
+I want to understand if certain states consistently appear as higher price or lower price markets for identical drugs.
+
+The analysis is grounded in reasoning related to bargaining power, market structure, and manufacturer pricing behavior in regulated markets.
+
+
+
+
+Input
+
+The inputs for this analysis include state, year, quarter, National Drug Code (NDC), labeler code, total reimbursement amount, Medicaid reimbursement amount, non-Medicaid reimbursement amount, number of prescriptions, units reimbursed, and suppression flag.
+
+These variables allow me to compare identical drugs across states and across time.
+I will exclude suppressed rows and zero-prescription records when calculating prices to ensure meaningful comparisons.
+The NDC serves as the unique identifier for comparing the same drug across markets.
+
+The dataset structure allows me to treat each state and quarter combination as a separate market observation.
+
+Output
+
+The primary output variable will be price per prescription, calculated using total reimbursement divided by number of prescriptions.
+
+I will analyze how this value varies across states for identical NDCs.
+A secondary output will be measures of price dispersion across states in the same quarter.
+I want to examine whether price differences persist across multiple quarters for the same drug.
+
+The focus is on identifying patterns in observable reimbursement behavior rather than estimating underlying cost structures.
+
+
+Time Horizon
+
+The time horizon will span all available years in the dataset to allow for quarterly panel analysis.
+
+Using multiple quarters enables me to examine whether interstate price differences persist over time or converge.
+
+
